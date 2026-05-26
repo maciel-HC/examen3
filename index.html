@@ -1,0 +1,185 @@
+<!-- ////////////////////////
+            INDEX (HTML) 
+    //////////////////////// -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Tutorial ARBOLES</title>
+</head>
+<body id="header">
+
+<!-- -----------------------
+        HEADER
+------------------------ -->
+  <header>
+    <div class="logo">
+     ESTRUCTURA DE DATOS - Árboles
+    </div>    
+    <nav id="navMenu" class="">
+      <ul class="ul">
+        <li><a href="#definicion">Definición</a></li>
+        <li><a href="#sintaxis">Sintaxis</a></li>
+        <li><a href="#ejercicios">Ejercicios</a></li>
+      </ul>
+    </nav>
+    <button id="navBoton" class="navBoton"><img src="img/menu.svg" alt=""></button>
+  </header>
+
+<!-- -----------------------
+        MAIN
+------------------------ -->  
+  <main>    
+    
+    <!-- IMAGEN -->
+    <img class="imgMain" src="img/js2.png" alt="">
+    
+    <!-- SECTION DEFINICIÓN-->
+    <section id="definicion" class="zoom">
+      <!-- ARTICLE -->
+      <article>
+        <h2>Definición</h2>
+        <p>
+          Los árboles son muy utilizados en informática como un método eficiente para búsquedas grandes y complejas.Casi todos los sistemas operativos almacenan sus archivos en árboles o estructuras similares a árboles.
+        </p>
+      </article>      
+    </section>
+    
+    <!-- SECTION SINTAXIS-->
+    <section id="sintaxis" class="zoom">
+      
+      <!-- ARTICLE -->
+      <article>
+        <h2>Características</h2>
+        <br>
+        <h3>CONCEPTOS BÁSICOS</h3>
+        <ul>
+          <li>Nodos. Se le llama nodo a cada elemento que contiene el árbol</li>
+          <li>Nodo padre. Se utiliza este término para llamar a todos aquellos nodos que tienen al menos un hijo.</li>
+          <li>Nodo hijo. Los hijos son todos aquellos nodos que tienen un padre.</li>
+          <li>SNodo hermano. Los nodos hermanos son aquellos nodos que comparten un mismo padre en común dentro de la estructura</li>
+                    <img class="imgMain" src="img/JS3.png" alt="">
+        </ul>
+        <br>
+        <h3>RELACIÓN DE POSICION</h3>
+        <ul>
+          <li>Nodo Raíz. Se refiere al primer nodo de un árbol, Solo un nodo del árbol puede ser la raíz.</li>
+          <li>Nodo Hoja. Son todos aquellos nodos que no tienen hijos, los cuales siempre se encuentran en los extremos de la estructura.</li>
+          <li>Nodo Interior o Rama. Estos son todosaquellos nodos que no son la raíz y que además tiene al menos un hijo.</li>
+          <img class="imgMain" src="img/JS4.png" alt="">
+        </ul>
+        <h3> TAMAÑO Y GRADO DE UN ÁRBOL</h3>
+        <h2> Nivel. El nivel de un nodo es su distancia a la raíz. Por lo tanto:</h2>
+        <ul>
+          <li>Un árbol vacío tiene 0 niveles</li>
+          <li>El nivel de la raíz es 1</li>
+          <li>El nivel de cada nodo se calculado contando cuantos nodos existen sobre él, hasta llegar a la raíz + 1.</li>
+          <li>Altura. Se le llama altura al número máximo de niveles de un árbol.</li>
+          <img class="imgMain" src="img/JS5.png" alt="">
+        </ul>
+       <h3>TIPOS DE ÁRBOLES</h3>
+       <h2>Árbol Binario</h2>
+        <ul>
+          <li>Estructura donde cada nodo puede tener máximo dos hijos: izquierdo y derecho.</li>
+          
+          <img class="imgMain" src="img/JS6.png" alt=""></ul>
+      <h2>Árbol AVL</h2>
+        <ul>
+          <li>Árbol binario balanceado que mantiene búsquedas rápidas y eficientes..</li>
+          
+          <img class="imgMain" src="images.webp" alt="">
+        </ul>
+     <h2>Árbol Heap</h2>
+        <ul>
+          <li>Estructura usada para colas de prioridad y algoritmos de ordenamiento..</li>
+          
+          <img class="imgMain" src="img/JS7.jpg" alt="">
+        </ul>
+
+      
+
+      </article>      
+   <section id="explorador">
+
+  <article>
+
+    <h2>Explorador de Archivos</h2>
+
+    <p class="subtitulo">
+      Ejemplo de árboles aplicado a la vida real.
+    </p>
+
+    <div class="panel">
+
+      <!-- MENÚ -->
+      <div class="arbol">
+
+        <ul>
+
+          <li onclick="mostrar('documentos')">
+            📁 Documentos
+          </li>
+
+          <li onclick="mostrar('imagenes')">
+            📁 Imágenes
+          </li>
+
+          <li onclick="mostrar('musica')">
+            📁 Música
+          </li>
+
+          <li onclick="mostrar('videos')">
+            📁 Videos
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- INFORMACIÓN -->
+      <div class="informacion">
+
+        <img id="imagen" src="" alt="">
+
+        <h3 id="titulo">
+          Selecciona una carpeta
+        </h3>
+
+        <p id="descripcion">
+          Aquí aparecerá la información.
+        </p>
+
+      </div>
+
+    </div>
+
+  </article>
+
+</section>
+         
+
+
+    
+    <!-- ATRAS -->
+    <a href="#header">
+      <div class="inicio">
+        Inicio
+      </div>
+    </a>
+  </main>
+
+
+<!-- -----------------------
+        FOOTER
+------------------------ -->    
+  <footer>
+    AroCapacitaciones &copy; 2022
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
